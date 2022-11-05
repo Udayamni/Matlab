@@ -1,9 +1,14 @@
 close all
 clear all
 clc
-syms   z s T
+%This is the  code to Evaluate the convution integral in left half plane
+
+
+syms   z s T      %Creating the variable
 store = 1;
 T =1;
+
+%For the equation s/s+1
 po = [0 1 0  ; 0 1 1 ];
 poles = po;
 a = size(poles);
